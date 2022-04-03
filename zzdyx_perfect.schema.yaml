@@ -53,8 +53,11 @@ custom_userdict:
   initial_quality: -1
 
 speller:
-  delimiter: " ;'"
-  #max_code_length: 4  # 四碼頂字上屏
+  alphabet: "qwertasdfgzxcvbyuiophjklnmAEUIOQWRTSDFGZXCVBYPHJKLNM"
+  initials: "qwertasdfgzxcvbyuiophjklnm"
+  auto_select: true
+  auto_clear: max_length
+  max_code_length: 4
 
 translator:
   dictionary: zzdyx_perfect
@@ -66,11 +69,6 @@ translator:
   encode_commit_history: true
   enable_user_dict: false
   max_phrase_length: 4
-
-#拼音混输
-abc_segmentor:
-  extra_tags:
-    - reverse_lookup
 
 #拼音反查
 reverse_lookup:
@@ -100,4 +98,4 @@ key_binder:
 recognizer:
   import_preset: default
   patterns:
-    reverse_lookup: "`[a-z]*'?$"
+    reverse_lookup: "^`[a-z]*'?$"
