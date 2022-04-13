@@ -36,18 +36,18 @@
   经过两次输入确认、完成了自动组词之后，只需要打4码 `nfjh`。
 
 * 三字词，由定长4码，改为了定长6码——每个字取前2码，例如：
-  ** `jlstjc` 计 **jl**ff 算 **st**oa 机 **jc**ww
-  ** `mbzfjb` 民 **mb**cc 政 **zf**tk 局 **jb**ii
+  * `jlstjc` 计 **jl**ff 算 **st**oa 机 **jc**ww
+  * `mbzfjb` 民 **mb**cc 政 **zf**tk 局 **jb**ii
 
   同时，也引入了 2+2 大写模式，用于后两个字的简拼。使一些音译词易于输入。例如：
-  ** `ldSJ` 洛 **ld**wi 杉/衫 **S** 矶 **J**
+  * `ldSJ` 洛 **ld**wi 杉/衫 **S** 矶 **J**
 
 * 四字以上，由定长4码，改为了定长6码——头两字前2后1，尾两字前2后1，例如：
-  ** `baylts` 布 **ba**oi 宜 **y**nod 诺斯艾利 **lt**uu 斯 **s**fqi
-  ** `zoyslt` 中 **zo**ii 央 **y**okk 电视 **sl**oc 台 **t**lii
+  * `baylts` 布 **ba**oi 宜 **y**nod 诺斯艾利 **lt**uu 斯 **s**fqi
+  * `zoyslt` 中 **zo**ii 央 **y**okk 电视 **sl**oc 台 **t**lii
 
   同时，也引入了 3+2 大写模式，用于后两个字的简拼。使一些音译词易于输入。例如：
-  ** `lonNA` 罗 **lo**wk 纳 **n**yok 尔迪尼 **N** 奥 **A**
+  * `lonNA` 罗 **lo**wk 纳 **n**yok 尔迪尼 **N** 奥 **A**
 
   ![](https://du1ab.one/images/2022/34zici.gif)
 
