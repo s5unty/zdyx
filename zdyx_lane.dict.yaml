@@ -1,0 +1,30 @@
+---
+name: zdyx_lane
+version: "4.10"
+sort: by_weight
+columns:
+  - text
+  - code
+  - weight
+encoder:
+  exclude_patterns:
+    - '^[v].*$'
+  rules:
+    - length_equal: 2
+      formula: 'AaAbAcBaBbBc'
+    - length_equal: 3
+      formula: 'AaAbBaBbCaCb'
+    - length_in_range: [4, 10]
+      formula: 'AaAbBaYaYbZa'
+# 词汇表(.txt) (https://github.com/rime/rime-essay-simp)
+vocabulary: essay-zh-hans
+# 字词典(.dict.yaml)
+import_tables:
+  - zdyx.single           # 哲豆音形的单字码表，去除声母的飞键(ui)和模糊(o)、减少自动编码的误会
+  - thuocl.it             # 清华词库-IT类 (https://github.com/thunlp/THUOCL)
+# - zhwiki-20210605       # 肥猫百万维基词库 (https://github.com/felixonmars/fcitx5-pinyin-zhwiki)
+# - luna_pinyin.extended  # 明月拼音扩充词库 (https://github.com/rime-aca/dictionaries)
+...
+
+哲豆音形
+
