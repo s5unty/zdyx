@@ -1,81 +1,50 @@
-# 如何在[RIME](https://rime.im/)中使用哲哲豆音形输入法
+# 哲豆音形输入法(弄堂版)
 
-RIME是一个通用的输入法引擎，它支持几乎所有的常见平台：
-- 在Windows上是小狼毫
-- 在MAC上是鼠须管
-- 在Linux上是ibus-rime或者fcitx-rime
-- 在手机安卓平台上是同文输入法
-- 在IOS（苹果手机）上是iRIME
+## 哲豆音形原版介绍
 
-因为是一个通用输入法引擎，所以我们可以使用一份配置来支持所有这些引擎。
+- [哲豆音形官网][1]
+- [哲豆音形RIME版][2]
+- 哲豆音形键位图
+<details>
+  <summary>显示键位图</summary>
+  ![](http://ys-f.ysepan.com/58342039/115098388/lMOeLjk4H546F27KHMJ31b/%E5%93%B2%E8%B1%86%E9%9F%B3%E5%BD%A2%E5%A4%A7%E5%9C%86%E6%BB%A1%E7%89%88%E9%94%AE%E7%9B%98%E5%9B%BE.jpg)
+</details>
 
-这个文档就是如何在RIME中支持[哲哲豆音形输入法](http://zzdzzd.ys168.com/)。
+## 与原版的主要差异
 
-## 哲哲豆音形输入法
+1. 字典与词典分离，词典不再依赖硬性编码
+2. 单字拥有了权重，[借鉴自][3] Rime 五笔字典
+3. 移除了U键(飞Q)和I键(飞Z)的声母飞键功能
+4. 重新定义了词组的编码格式，最长6码
 
-[哲哲豆音形输入法](http://zzdzzd.ys168.com/)分为两个版本：
-1. 圆满版：词组较多，适合初学者。
-2. 快版：词组较少，所以重码率低，适合打单字为主的高手。
+  * 单字，和原版相同，包括简码(1/2/3)和全码(4)
+    ![](https://du1ab.one/images/2022/1jian.gif)
 
-## 自定义方法
-自造词可以放在`zzdyx_userdict.txt`中。
+  * 二字词，由定长4码，改为了最长6码——每个字取前3码
+    拥有2级简码的字，在组二字词时，该字可以省略第3码。
+    示例中的「南/上/海」，都有对应的2简，在组词时，该字只需2码。
+    如果打满6码，则不用空格确认，被随后的输入自动顶上屏。
 
-如果想关闭拼音混输，那么在对应的schema.yaml文件里（哲哲豆圆满版是`zzdyx_perfect.schema.yaml`，哲哲豆快版是`zzdyx_mofast.schema.yaml`），把下面一段代码前加`#`注释掉就好。
-```
-abc_segmentor:
-  extra_tags:
-    - reverse_lookup
-```
+    ![](https://du1ab.one/images/2022/2zici.gif)
 
-## 安装方法
-本输入法的编码反查和拼音混输功能依赖于
+    「京」字没有2简，「南京」至少需要打5码—— `nfjhi`。
+    经过两次输入确认、完成了自动组词之后，只需要打4码 `nfjh`。
 
- - [袖珍简化字拼音](https://github.com/rime/rime-pinyin-simp) **`pinyin-simp`**
+  * 三字词，由定长4码，改为了定长6码——每个字取前2码
+    例如： `jlstjc` 计 **jl**ff 算 **st**oa 机 **jc**ww，`mbzfjb` 民 **mb**cc 政 **zf**tk 局 **jb**ii。
 
-所以在安装哲哲豆音形时，同时需要安装`pinyin-simp`输入法。
+    同时，也引入了 2+2 大写模式，用于后两个字的简拼。使一些音译词易于输入。
+    例如： `ldSJ` 洛 **ld**wi 杉/衫 **S** 矶 **J**
 
-安装步骤：
-1. 安装 [東風破](https://github.com/rime/plum) 。
-2. 使用 [東風破](https://github.com/rime/plum) 安装哲哲豆音形。
-3. 修改Rime的配置增加哲哲豆音形选项。
-4. 重新部署RIME，以生效。
+  * 四字以上，由定长4码，改为了定长6码——头两字前2后1，尾两字前2后1
+    例如： `baylts` 布 **ba**oi 宜 **y**nod 诺斯艾利 **lt**uu 斯 **s**fqi，`zoyslt` 中 **zo**ii 央 **y**okk 电视 **sl**oc 台 **t**lii
 
-### 安装[東風破](https://github.com/rime/plum) 
-具体安装方法见[東風破](https://github.com/rime/plum) 官方网站。
+    同时，也引入了 3+2 大写模式，用于后两个字的简拼。使一些音译词易于输入。
+    例如： `lonNA` 罗 **lo**wk 纳 **n**yok 尔迪尼 **N** 奥 **A**
 
-简单来说，Linux/Mac上使用下列命令安装：
-```
-curl -fsSL https://git.io/rime-install | bash
-```
+    ![](https://du1ab.one/images/2022/34zici.gif)
 
-Windows上用家可以通過 小狼毫 0.11 以上「輸入法設定／獲取更多輸入方案」調用配置管理器或者[東風破](https://github.com/rime/plum) 官方网站列出的其他安装方法。
+[1]: http://zzdzzd.ysepan.com/
+[2]: https://github.com/whjiang/zzdyx_rime
+[3]: https://gist.github.com/s5unty/08c3a6d7429c65a37b4b4aaaf3f9bed5
 
-### 安装哲哲豆音形
-在Linux、MAC上使用以下命令安装：
-```
-bash rime-install pinyin-simp whjiang/zzdyx_rime
-```
-
-其中, `bash rime-install`是[東風破](https://github.com/rime/plum) 的命令。在Windows上，请替换为相应的命令（例如：`rime-install.bat`）。`pinyin-simp`和`whjiang/zzdyx_rime`是我们要通过[東風破](https://github.com/rime/plum) 安装的两个输入法名字。
-
-### 修改Rime的配置增加哲哲豆音形选项
-然后在`~/Library/Rime`创建一个`default.custom.yaml`文件。文件内容如下：
-```yaml
-patch:
-  schema_list:
-    - {schema: zzdyx_perfect} #哲哲豆音形圆满版
-    - {schema: zzdyx_mofast}  #哲哲豆音形快版
-```
-
-###  重新部署RIME
-然后，在RIME菜单中选择“同步用户数据”和“重新部署”。就可以使用了。
-
-
-### 如何在手机（安卓/苹果）上使用
-安卓上请使用同文输入法，IOS上请使用iRIME输入法。因作者只有IOS手机，所以只测试了iRIME。
-
-因为iRIME没有编译bin文件的功能，所以必须先用上面的安装方法在电脑上安装一遍，生成出
-- zzdyx*.bin
-- pinyin_simp*.bin
-
-把这些文件连同`zzdyx_perfect.schema.yaml`、`zzdyx_mofast.schema.yaml`和`pinyin_simp.schema.yaml`一起传到手机上（通过iRIME的“电脑快传”功能）。再像上面一样修改iRIME的`default.custom.yaml`就可以了。
