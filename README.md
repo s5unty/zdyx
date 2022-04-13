@@ -7,7 +7,7 @@
 - 哲豆音形键位图
 <details>
   <summary>显示键位图</summary>
-  ![](http://ys-f.ysepan.com/58342039/115098388/lMOeLjk4H546F27KHMJ31b/哲豆音形大圆满版键盘图.jpg)
+  <img src="http://ys-f.ysepan.com/58342039/115098388/lMOeLjk4H546F27KHMJ31b/哲豆音形大圆满版键盘图.jpg">
 </details>
 
 ## 与原版的主要差异
