@@ -5,11 +5,8 @@
 - [哲豆音形官网][1]
 - [哲豆音形RIME版][2]
 - 哲豆音形键位图
-<details><summary>显示键位图</summary>
 
-  ![](http://ys-f.ysepan.com/58342039/115098388/lMOeLjk4H546F27KHMJ31b/哲豆音形大圆满版键盘图.jpg)
-
-</details>
+    ![](http://ys-f.ysepan.com/58342039/115098388/lMOeLjk4H546F27KHMJ31b/哲豆音形大圆满版键盘图.jpg)
 
 ## 与原版的主要差异
 
@@ -19,7 +16,7 @@
 4. 重新定义了词组的编码格式，最长6码
 5. 拼音反查键，由 \` 改为 `i`
 
-  ![](https://du1ab.one/images/2022/fancha.gif)
+    ![](https://du1ab.one/images/2022/fancha.gif)
 
 ## 弄堂版的特点说明
 
