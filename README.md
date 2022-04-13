@@ -7,8 +7,7 @@
 - 哲豆音形键位图
 <details>
   <summary>显示键位图</summary>
-
-![](http://ys-f.ysepan.com/58342039/115098388/lMOeLjk4H546F27KHMJ31b/%E5%93%B2%E8%B1%86%E9%9F%B3%E5%BD%A2%E5%A4%A7%E5%9C%86%E6%BB%A1%E7%89%88%E9%94%AE%E7%9B%98%E5%9B%BE.jpg)
+  ![](http://ys-f.ysepan.com/58342039/115098388/lMOeLjk4H546F27KHMJ31b/哲豆音形大圆满版键盘图.jpg)
 </details>
 
 ## 与原版的主要差异
@@ -18,7 +17,7 @@
 3. 移除了U键(飞Q)和I键(飞Z)的声母飞键功能
 4. 重新定义了词组的编码格式，最长6码
 
-## 弄堂版的编码格式
+## 弄堂版的特点说明
 
 * 单字，和原版相同，包括简码(1/2/3)和全码(4)
 
@@ -36,20 +35,33 @@
   经过两次输入确认、完成了自动组词之后，只需要打4码 `nfjh`。
 
 * 三字词，由定长4码，改为了定长6码——每个字取前2码，例如：
-  * `jlstjc` 计 **jl**ff 算 **st**oa 机 **jc**ww
-  * `mbzfjb` 民 **mb**cc 政 **zf**tk 局 **jb**ii
+  * `jlstjc` 计 `jlff` 算 `stoa` 机 `jcww`
+  * `mbzfjb` 民 `mbcc` 政 `zftk` 局 `jbii`
 
-  同时，也引入了 2+2 大写模式，用于后两个字的简拼。使一些音译词易于输入。例如：
-  * `ldSJ` 洛 **ld**wi 杉/衫 **S** 矶 **J**
+  同时，也引入了 2+2 大写模式，用于后两个字的简拼。便于输入一些音译词或是人名。例如：
+  * `ldSJ` 洛 `ldwi` 杉/衫 `S` 矶 `J`
+  * `dfJH` 丁 `dfff` 俊 `J` 晖/辉 `H`
 
 * 四字以上，由定长4码，改为了定长6码——头两字前2后1，尾两字前2后1，例如：
-  * `baylts` 布 **ba**oi 宜 **y**nod 诺斯艾利 **lt**uu 斯 **s**fqi
-  * `zoyslt` 中 **zo**ii 央 **y**okk 电视 **sl**oc 台 **t**lii
+  * `baylts` 布 `baoi` 宜 `ynod` 诺斯艾利 `ltuu` 斯 `sfqi`
+  * `zoyslt` 中 `zoii` 央 `yokk` 电视 `sloc` 台 `tlii`
 
-  同时，也引入了 3+2 大写模式，用于后两个字的简拼。使一些音译词易于输入。例如：
-  * `lonNA` 罗 **lo**wk 纳 **n**yok 尔迪尼 **N** 奥 **A**
+  同时，也引入了 3+2 大写模式，用于后两个字的简拼。便于输入一些音译词或是人名。例如：
+  * `jnlNY` 加 `jzii` 利 `ltuu` 福尼 `N` 亚 `Y` —— N键(飞Z)的笔形飞键功能，仍然有效
+  * `lonED` 罗 `lowk` 纳 `nyok` 尔 `E` 多 `D`
 
   ![](https://du1ab.one/images/2022/34zici.gif)
+
+* 拼音反查键，由 \` 改为 `i`
+
+  ![](https://du1ab.one/images/2022/fancha.gif)
+
+* 整句的连续输入，前提是字/词无重码(位于首选)
+
+  ![](https://du1ab.one/images/2022/sentence.gif)
+
+* 支持 3 字以内词组的自动造词，常用于口头语，或人名地名
+* 支持 4 码以上字词的动态调频，单字简码(1/2/3)不受影响
 
 [1]: http://zzdzzd.ysepan.com/
 [2]: https://github.com/whjiang/zzdyx_rime
