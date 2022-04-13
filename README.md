@@ -7,7 +7,7 @@
 - 哲豆音形键位图
 <details><summary>显示键位图</summary>
 
-![](http://ys-f.ysepan.com/58342039/115098388/lMOeLjk4H546F27KHMJ31b/哲豆音形大圆满版键盘图.jpg)
+  ![](http://ys-f.ysepan.com/58342039/115098388/lMOeLjk4H546F27KHMJ31b/哲豆音形大圆满版键盘图.jpg)
 
 </details>
 
@@ -17,6 +17,9 @@
 2. 单字拥有了权重，[借鉴自][3] Rime 五笔字典
 3. 移除了U键(飞Q)和I键(飞Z)的声母飞键功能
 4. 重新定义了词组的编码格式，最长6码
+5. 拼音反查键，由 \` 改为 `i`
+
+  ![](https://du1ab.one/images/2022/fancha.gif)
 
 ## 弄堂版的特点说明
 
@@ -52,10 +55,6 @@
   * `lonED` 罗 `lowk` 纳 `nyok` 尔 `E` 多 `D`
 
   ![](https://du1ab.one/images/2022/34zici.gif)
-
-* 拼音反查键，由 \` 改为 `i`
-
-  ![](https://du1ab.one/images/2022/fancha.gif)
 
 * 整句的连续输入，前提是字/词无重码(位于首选)
 
