@@ -4,7 +4,8 @@
 
 - [哲豆音形官网][1]
 - [哲豆音形RIME版][2]
-- <details><summary>哲豆音形键位图</summary>
+
+<details><summary>哲豆音形键位图</summary>
 
 ![](https://du1ab.one/images/2022/zdyx_keyboard.jpg)
 </details>
