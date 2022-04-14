@@ -11,11 +11,11 @@ encoder:
     - '^[v].*$'
   rules:
     - length_equal: 2
-      formula: 'AaAbAcBaBbBc'
+      formula: 'AaAbBaBb'
     - length_equal: 3
-      formula: 'AaAbBaBbCaCb'
+      formula: 'AaAbBaCa'
     - length_in_range: [4, 10]
-      formula: 'AaAbBaYaYbZa'
+      formula: 'AaAbBaYaZa'
 # 词汇表(.txt) (https://github.com/rime/rime-essay-simp)
 vocabulary: essay-zh-hans
 # 字词典(.dict.yaml)
